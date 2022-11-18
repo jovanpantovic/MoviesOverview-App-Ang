@@ -1,0 +1,20 @@
+<button (click)="logout()" class="btnLogout">Logout</button><br/>
+
+<div class="genres">
+  
+  <div *ngFor="let genre of genres; let i = index">
+    <h3 class="movieGenre" *ngIf="i == 0">{{ genre?.name }}</h3>
+  </div>
+  <app-action></app-action>
+
+  <div *ngFor="let genre of genres; let i = index">
+    <h3 class="movieGenre" *ngIf="i == 1">{{ genre?.name }}</h3>
+  </div>
+  <app-adventure></app-adventure> 
+
+  <div *ngFor="let genre of genres; let i = index">
+    <h3 class="movieGenre" *ngIf="i == 2">{{ genre?.name }}</h3>
+  </div>
+  <app-animation></app-animation>
+  
+</div>

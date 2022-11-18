@@ -1,0 +1,9 @@
+<div class="loginDiv">
+<form class="form">
+    <h2>Sign in</h2>
+    <input type="text" #email placeholder="Email..."/>
+    <input type="password" #password placeholder="Password..."/>
+    <button type="submit" (click)="onSignin(email.value,password.value)">Sign in</button>
+</form>
+<button type="button" (click)="backToRegister()" class="backRegisterBtn">Register</button>
+</div>

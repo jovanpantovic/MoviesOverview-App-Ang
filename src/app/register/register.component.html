@@ -1,0 +1,6 @@
+<form class="form">
+    <h2>Sign up</h2>
+    <input type="email" #emailSignup placeholder="Create email..."/>
+    <input type="password" #passwordSignup placeholder="Create password"/>
+    <button type="submit" (click)="onSignup(emailSignup.value,passwordSignup.value)">Sign up</button>
+</form>

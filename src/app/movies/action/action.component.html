@@ -1,0 +1,11 @@
+<div class="movieContainer">
+  <div *ngFor="let movie of movies; let i = index" (click)="openPopup()">
+    <div  *ngIf="i < 6">
+      <img src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}" alt="{{movie.title}}" class="movie" (click)="openModal(movie.overview)"/>
+      <div class="title">{{ movie.title }}</div>
+    </div>
+  </div>
+</div>
+
+
+
